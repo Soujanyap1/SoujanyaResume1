@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf8f1;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 30px;
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .leftSide {
+  display: inline-block;
+  background: #bb6464;
+  padding: 20px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightslategray;
+}
+
+.profileText h1 {
+  color: aliceblue;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.contactInfo {
+  padding: 40px;
+}
+
+.title {
+  color: azure;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  position: relative;
+  font-weight: 300;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: coral;
+}
+
+.contactInfo ul li span {
+  color: antiquewhite;
+}
+
+.contactInfo.skills ul li {
+  color: antiquewhite;
+  font-size: 15px;
+}
+
+.contactInfo.languages ul li {
+  color: antiquewhite;
+  font-size: 15px;
+}
+
+.container .rightSide {
+  position: relative;
+  background: white;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.title2 {
+  color: #082032;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.education {
+  margin-bottom: 50px;
+}
+
+.title3 {
+  color: #082032;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.title4 {
+  color: #082032;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.box .comapany_year {
+  min-width: 180px;
+  font-size: 17px;
+}
+
+.box .comapany_year h5 {
+  text-transform: uppercase;
+  color: #082032;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.box .text h4 {
+  text-transform: uppercase;
+  color: lightseagreen;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    flex-direction: column;
+  }
+  .box .comapany_year {
+    min-width: 180px;
+    font-size: 17px;
+  }
+}
